@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bargain</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">
+          <img src="images/bargain-logo.png" />
+        </a>
+
+        <div class="nav-con">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <div class="nav-main">
+            <a href="#">Battles</a>
+            <a href="#">Emcees</a>
+            <a href="#">Merch</a>
+            <a href="#">About</a>
+          </div>
+          <div class="nav-social">
+            <a href=""><img src="../images/youtube.png" /></a>
+            <a href=""><img src="../images/facebook.png" /></a>
+            <a href=""><img src="../images/instagram.png" /></a>
+            <a href=""><img src="../images/x.png" /></a>
+          </div>
+          <div class="nav-text">
+            <a class="footer-text">&#169; Jayson Hicarte All Rights Reserved 2026</a>
+          </div>
+        </div>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-header">
+        <img src="../images/bg-image.png" />
+      </div>
+      <div class="hero-footer">
+        <a class="footer-text">&#169; Jayson Hicarte All Rights Reserved 2026</a>
+
+        <div class="footer-social">
+          <a href=""><img src="../images/youtube.png" /></a>
+          <a href=""><img src="../images/facebook.png" /></a>
+          <a href=""><img src="../images/instagram.png" /></a>
+          <a href=""><img src="../images/x.png" /></a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+  </body>
+</html>
